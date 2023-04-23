@@ -8,20 +8,17 @@ The dataset provided includes product metadata such as title, description, bulle
 
 
 ## Approach
-1. Imports necessary libraries such as pandas, numpy, matplotlib, seaborn, and klib, and installs nltk library.
-also reads in the training and testing data from csv files.
-2.Importing necessary libraries: pandas, matplotlib, seaborn, numpy, mpl_toolkits, klib, and nltk.
-3.Reading in train and test data as pandas dataframes from CSV files.
-4.Preprocessing the data with klib, which includes cleaning column names, dropping missing values, and converting data types. It also checks for and removes duplicates in the data.
-5.Filling in missing values with "None".
-6.Checking for any remaining missing values and dropping those rows.
-7.Visualizing the distribution of the "product_type_id" column with a boxplot.
-8.Concatenating the "title", "bullet_points", and "description" columns into a new "text" column.
-9.Preprocessing the text data with a function that removes punctuation, converts text to lowercase, tokenizes the text, removes stop words, and lemmatizes the tokens.
-10.Encoding and decoding text data with a function that encodes text into ASCII and normalizes the text to remove any non-standard characters.
-11.Using regular expressions to remove any special characters.
-12.Replacing single quotes with double quotes.
-13Splitting text into a list of words and joining the words back together with a single space between each word
+1. Reading in train and test data as pandas dataframes from CSV files.
+2. Preprocessing the data with klib, which includes cleaning column names, dropping missing values, and converting data types. It also checks for and removes duplicates in the data.
+3. Filling in missing values with "None".
+4. Checking for any remaining missing values and dropping those rows.
+5. Visualizing the distribution of the "product_type_id" column with a boxplot.
+6. Concatenating the "title", "bullet_points", and "description" columns into a new "text" column.
+7. Preprocessing the text data with a function that removes punctuation, converts text to lowercase, tokenizes the text, removes stop words, and lemmatizes the tokens.
+8. Encoding and decoding text data with a function that encodes text into ASCII and normalizes the text to remove any non-standard characters.
+9. Using regular expressions to remove any special characters.
+10. Replacing single quotes with double quotes.
+11. plitting text into a list of words and joining the words back together with a single space between each word
 
 ## Feature Engineering
 ### The following feature engineering steps were taken:
